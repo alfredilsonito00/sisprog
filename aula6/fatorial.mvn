@@ -1,0 +1,10 @@
+0000 8000
+# loop de decrementar i
+# subrotina fatorial
+# subrotina multiplicacao
+0002 ;while i > 0 {
+    fatorial = fatorial(n-1)*n
+}
+
+0100 0000
+0102 0000
