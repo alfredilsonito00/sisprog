@@ -10,19 +10,24 @@ I K /0001
 GD /000; carrega x0
 MM MAX; salva max 0
 GD /000
+
+
 LOOP LV /005
 SUB I
-JZ 
+JZ IMPRIME; 5-i = 0?
 GD /000; carrega x
 SB BASE
 SB MAX
-JN & /2
+JN SKIP ; x - max < 0 ?
 AD MAX
-MM MAX
-GD /000
+MM MAX; max = x
+SKIP GD /000
+LV /001
+AD I
+MM I; i = i-1
 JP LOOP
-IMPRIME 
-LD MAX
+
+IMPRIME LD MAX
 ML MULT; olha apenas segundo digito
 SB COUT
 JN SOMA; dig - A < 0 ?
