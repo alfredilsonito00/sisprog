@@ -1,16 +1,23 @@
 @ /106
 BASE K /3030
 ;COUT K /0A00
-;MULT K /0100
+DIV K /0100
+MUL K /0100
 ;A K /000A
 ;MAX K /8000
-I K /0000
+I K /0001
 
 @ =0
+GD /000; carrega x
+SB BASE
+MM AUX
+DV DIV;
+MUL DIV;
 
 LOOP LV /00A
-SUB I
+SB I
 JZ FIM; 10-i = 0?
+GD /000; espaço
 GD /000; carrega x
 SB BASE
 POINTER MM /300
@@ -23,5 +30,7 @@ LV /001
 AD I
 MM I; i = i-1
 JP LOOP
+
+LETRAS K /0000
 
 FIM HM =0
