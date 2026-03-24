@@ -1,3 +1,4 @@
+; verifica se o numero digitado, de dois decimais, eh divisivel por 3, se for retorna 01 senao retorna 00
 @ /0000
         GD /000
         SB ROT04
@@ -18,8 +19,8 @@ JUMP02  LD ROT03
         HM /0000
 
 @ /0300
-ROT00 K /0000
-ROT01 K /0003
-ROT02 K /0000
-ROT03 K /0001
-ROT04 K /3030
+ROT00 K /0000; numerador
+ROT01 K /0003; denominador
+ROT02 K /0000; falso
+ROT03 K /0001; verdadeiro
+ROT04 K /3030; converte ascii
