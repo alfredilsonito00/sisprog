@@ -1,4 +1,3 @@
-; calcula um numero (NUM) elevado a (POT)
 @ /0000
         LD ROT01
         MM ROT03
