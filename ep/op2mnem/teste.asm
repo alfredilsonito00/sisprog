@@ -1,0 +1,11 @@
+@ =512
+A K /0FFF
+B K =1
+RES K =0
+I K =0
+
+& /64
+LD A
+AD B
+MM RES
+HM /0000
