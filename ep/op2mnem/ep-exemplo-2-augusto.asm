@@ -1,18 +1,18 @@
 @ /0000
-LD /302
-MM /306
-LD /306
-SB /304
-MM /306
-JZ /014
-LD /300
-ML /300
-MM /308
-JP /004
-HM /000
+        LD ROT01   
+        MM ROT03   
+JUMP00  LD ROT03   
+        SB ROT02   
+        MM ROT03   
+        JZ JUMP01  
+        LD ROT00   
+        ML ROT00   
+        MM ROT04   
+        JP JUMP00  
+JUMP01  HM /000
 @ /0300
-K /0003
-K /0002
-K /0001
-K /0000
-K /0000
+ROT00   K /0003
+ROT01   K /0002
+ROT02   K /0001
+ROT03   K /0000
+ROT04   K /0000

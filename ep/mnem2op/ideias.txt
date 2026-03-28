@@ -1,6 +1,0 @@
-preciso receber os caracteres
-
-
-
-
-recebe os dois caracteres de menemônicos
