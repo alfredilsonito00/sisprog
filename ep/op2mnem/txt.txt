@@ -1,0 +1,15 @@
+Programa 2. Disassembler (5,0 pontos)
+
+Construa um programa desmontador, chamado op2mnem.c, que recebe um arquivo .mvn e gera um código asm válido correspondente impresso em tela. Adote as seguintes convenções:
+
+Rótulos de variáveis/constantes: começam com ROT + 2 dígitos decimais, em ordem crescente, por exemplo, ROT00, ROT01, ROT02, …
+
+Rótulos de saltos: começam com JUMP + 2 dígitos decimais, em ordem crescente, por exemplo, JUMP00, JUMP01, JUMP02, …
+
+Rótulos de subrotinas: começam com SUB  + 2 dígitos decimais, em ordem crescente, por exemplo, SUB00, SUB01, SUB02, …
+
+Observe que é possível gerar um asm válido sem rótulos, o que também será aceito desde que o mvn gerado esteja correto.
+
+Assuma que as instruções de operação do programa ficam entre os endereços 0x0000 e 0x02FF. Os endereços dos rótulos de valores devem ficar entre 0x0300 e 0x03FF.
+
+Mantenha a indentação do asm gerado, alinhando as operações que estão dentro de um mesmo nível, como no exemplo abaixo:
